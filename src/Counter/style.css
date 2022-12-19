@@ -1,0 +1,20 @@
+div > * {
+  font-size: 18px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:first-of-type {
+  background-color: #49c78e;
+}
+button:last-of-type {
+  background-color: #f24667;
+}
