@@ -5,18 +5,17 @@ export default class Counter extends Component {
     counter: 0,
   };
   n = this.props.steps;
+  steps = this.n > 0 ? parseInt(this.n) : 1;
   onIncrement = () => {
-    this.n = this.n > 0 ? parseInt(this.n) : 1;
     console.log();
     this.setState((prevState) => ({
-      counter: prevState.counter + this.n,
+      counter: prevState.counter + this.steps,
     }));
   };
   onDecrement = () => {
-    this.n = this.n > 0 ? parseInt(this.n) : 1;
     if (this.state.counter > 0) {
       this.setState((prevState) => ({
-        counter: prevState.counter - this.n,
+        counter: prevState.counter - this.steps,
       }));
     }
   };
