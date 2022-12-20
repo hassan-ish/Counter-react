@@ -7,7 +7,6 @@ export default class Counter extends Component {
   n = this.props.steps;
   steps = this.n > 0 ? parseInt(this.n) : 1;
   onIncrement = () => {
-    console.log();
     this.setState((prevState) => ({
       counter: prevState.counter + this.steps,
     }));
